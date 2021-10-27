@@ -64,7 +64,8 @@
   /* Home Page Rulesets */
   
   #introduction {
-    margin: 15% 0 50% 0 ;
+    margin: 5% 0 10% 0;
+    text-align: center;
 
   }
   
@@ -73,22 +74,25 @@
   }
   
   #introduction p {
-    margin: 10% auto;
+    margin: 5% auto;
     font-size: 18px;
     font-weight: lighter;
   }
   
   #introduction a {
     display: block;
-    width: 20%;
-    padding: 3% 8%;
+    width: 100px;
+    padding: 1% 5%;
     margin: 0 auto;
     color: #ffffff;
     background-color: #4c7ef3;
-    border-radius: 4px;
+    border-radius: 100px;
+    transition: transform .3s ease-in;
   }
   
   #introduction a:hover {
+    transition: .3s ease-in;
+    transform: scale(1.1);
     background-color: #26A69A;
   }
   
@@ -104,16 +108,18 @@
     overflow: auto;
     border: white 1px solid;
     opacity: 0.9;
-    padding: 2% 5%;
     margin: 5% auto;
     border-radius: 5px;
+    background-color: rgb(231, 210, 210);
+
   
   }
   
   .image {
     display: inline-block;
     vertical-align: middle;
-    width: 32%;
+    width: 200px;
+    height: 200px;
     min-width: 100px;
     margin: 0 auto;
   }
@@ -129,6 +135,7 @@
   .name, .description, .price, del {
     color: #000000;
     text-align: left;
+    text-decoration: none;
   }
   
   .description, .price {
@@ -151,7 +158,7 @@
   .sale {
     margin-top: 0;
     margin-bottom: 0;
-    color: #fa4359;
+    color: #662129;
     font-size: 16px;
     font-weight: bold;
     text-align: left;
@@ -161,29 +168,32 @@
   
   #connection {
     width: 100%;
-    margin: 15% auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
     text-align: center;
   }
   
   #top {
-    margin: 15% auto;
+    margin: 10% 5% auto;
+    text-align: center;
   }
   
   #top h2 {
-    margin: 3%;
+    margin: 1%;
     font-size: 30px;
     font-weight: normal;
   }
   
   #top p {
-    margin: 3%;
+    margin: 1%;
     font-size: 18px;
     font-weight: lighter;
   }
   
   .contact {
     width: 100%;
-    margin: 10% auto;
+    margin: 5% auto;
   }
   
   .contact p, .contact ul {
